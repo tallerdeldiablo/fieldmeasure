@@ -1,0 +1,179 @@
+:root {
+  --accent: #ff5b1f;
+  --text: #17191d;
+  --muted: #667085;
+  --line: #e4e7ec;
+  --soft: #f5f6f8;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #e9edf2;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+}
+
+button, input { font: inherit; }
+
+.app-shell {
+  width: min(430px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+  background: var(--bg);
+  position: relative;
+  padding-bottom: 78px;
+}
+
+.topbar {
+  height: 82px;
+  display: grid;
+  grid-template-columns: 42px 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+}
+
+.topbar small {
+  display: block;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.icon-btn, .more {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.icon-btn { font-size: 26px; }
+
+.brand {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.brand span { color: var(--accent); }
+
+.content { padding: 15px 13px; }
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.primary,
+.secondary {
+  min-height: 48px;
+  border-radius: 9px;
+  font-weight: 800;
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: white;
+}
+
+.secondary {
+  background: var(--soft);
+  color: var(--text);
+}
+
+.search {
+  width: 100%;
+  margin: 11px 0;
+  border: 0;
+  background: var(--soft);
+  border-radius: 9px;
+  padding: 14px;
+  outline: none;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 52px 1fr 34px;
+  gap: 12px;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.thumb {
+  height: 52px;
+  display: grid;
+  place-items: center;
+  background: var(--soft);
+  border-radius: 9px;
+}
+
+.project-info h2 {
+  margin: 0 0 4px;
+  font-size: 16px;
+}
+
+.project-info p,
+.project-info small {
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.project-info small {
+  display: block;
+  margin-top: 3px;
+}
+
+.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: white;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bottom-nav button {
+  border: 0;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.bottom-nav span { font-size: 12px; }
+
+.bottom-nav .active {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+@media (min-width: 700px) {
+  body { padding: 30px 0; }
+  .app-shell {
+    min-height: 860px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 60px rgba(0,0,0,.12);
+  }
+}
