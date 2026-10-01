@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FieldMeasure</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <button class="icon-btn" aria-label="Menu">☰</button>
+      <div>
+        <small>Home</small>
+        <h1>Projects</h1>
+      </div>
+      <div class="brand">Measure<span>Flow</span></div>
+    </header>
+
+    <section class="content">
+      <div class="actions">
+        <button class="primary">+ New</button>
+        <button class="secondary">Sort</button>
+      </div>
+
+      <input class="search" type="search" placeholder="Search projects" />
+
+      <div class="project-list">
+        <article class="project-card">
+          <div class="thumb">⌂</div>
+          <div class="project-info">
+            <h2>Smith Residence</h2>
+            <p>Anna Smith · 123 Main St, Austin, TX</p>
+            <small>3 rooms · 5 windows · Today</small>
+          </div>
+          <button class="more">•••</button>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb">⌂</div>
+          <div class="project-info">
+            <h2>Lopez Home</h2>
+            <p>R. Lopez · 456 Oak Ave, Dallas, TX</p>
+            <small>1 room · 0 windows · Sep 2</small>
+          </div>
+          <button class="more">•••</button>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb">⌂</div>
+          <div class="project-info">
+            <h2>Office Building</h2>
+            <p>Northline · 321 Commerce St, Austin, TX</p>
+            <small>0 rooms · 0 windows · Aug 28</small>
+          </div>
+          <button class="more">•••</button>
+        </article>
+      </div>
+    </section>
+
+    <nav class="bottom-nav">
+      <button class="active">⌂<span>Projects</span></button>
+      <button>▧<span>Gallery</span></button>
+      <button>⚙<span>Settings</span></button>
+    </nav>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
